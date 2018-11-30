@@ -24,6 +24,53 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <style>
+            
+            
+            .chatcontainer {
+                border: 2px solid black;
+                background-color:   whitesmoke;
+                border-radius: 5px;
+                padding: 10px;
+                margin: 10px 0;
+            }
+            p {
+                color: black;
+                font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+            }
+            
+            
+            
+            .chatcontainer::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            .chatcontainer img {
+                float: left;
+                max-width: 60px;
+                width: 100%;
+                margin-right: 20px;
+                border-radius: 50%;
+            }
+            
+            .chatcontainer img.right {
+                float: right;
+                margin-left: 20px;
+                margin-right:0;
+            }
+            
+            .time-right {
+                float: right;
+                color: black;
+            }
+            
+            .time-left {
+                float: left;
+                color: black;
+            }
+            </style>
 
   </head>
 
@@ -32,7 +79,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Gym Conferatur</a>
+        <a class="navbar-brand js-scroll-trigger" href="index.html">Gym Conferatur</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,196 +102,36 @@
       </div>
     </nav>
 
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>SWEAT. SHINE. REPEAT</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text mb-5"> Find your Gym, Schedule your visits, Manage your profile, Live Gym Updates & </br>
-             KILL YOUR EXCUSES.</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-subheading text-white">Time to materialize your fitness resolution!</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">Get started by comparing gyms, get attractive deals Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
-          </div> 
-        </div>
-      </div> 
-    </section> -->
-
-     <!-- <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-     <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>
-              <h3 class="mb-3">Ready to Ship</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3"></i>
-              <h3 class="mb-3">Up to Date</h3>
-              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-heart text-primary mb-3 sr-icon-4"></i>
-              <h3 class="mb-3">Made with Love</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </section> -->
-
-    <section class="p-0" id="portfolio">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-            </br>
-              <h2 class="section-heading">At Your Service</h2>
-              <hr class="my-4">
-            </div>
-          </div>
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/compare.jpg">
-              <img class="img-fluid" src="img/compare.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
+    <section class="bg-secondary text-white">
+        <div class="container">
+            <div class="chatcontainer">
+                    <img src="/img/header1.jpg" alt="Avatar" style="width:100%;">
+                    <p>Hello, How may I help you today?</p>
+                    <span class="time-right">11:00</span>
                   </div>
-                  <div class="project-name">
-                    Compare Gyms
+                  
+                  <div class="chatcontainer darker">
+                    <img src="/img/blog.jpg" alt="Avatar" class="right" style="width:100%;">
+                    <p>Hey! I am looking to book an appoitnment with a physiotherapist tomorrow</p>
+                    <span class="time-left">11:01</span>
                   </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/offer.jpg">
-              <img class="img-fluid" src="img/offer.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
+                  
+                  <div class="chatcontainer">
+                    <img src="/img/header1.jpg" alt="Avatar" style="width:100%;">
+                    <p>Sure. Is 4:00 pm fine?</p>
+                    <span class="time-right">11:02</span>
                   </div>
-                  <div class="project-name">
-                    Offers
+                  
+                  <div class="chatcontainer darker">
+                    <img src="/img/blog.jpg" alt="Avatar" class="right"  style="width:100%;">
+                    <p>Yup, that sounds good.</p>
+                    <span class="time-left">11:05</span>
                   </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/livestatus.jpg">
-              <img class="img-fluid" src="img/livestatus.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
                   </div>
-                  <div class="project-name">
-                   Check live Gym Status
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/chat.jpg">
-              <img class="img-fluid" src="img/chat.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                   Chat with your gym representative
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/blog.jpg">
-              <img class="img-fluid" src="img/blog.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Blogs
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/login.jpg">
-              <img class="img-fluid" src="img/login.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Register/Login
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+                  
     </section>
 
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Connect with us in social media</h2>
-       
-        <a href="#" class="fa fa-facebook"></a> &nbsp;
-        <a href="#" class="fa fa-twitter"></a> &nbsp;
-        <a href="#" class="fa fa-google"></a> &nbsp;
-        <a href="#" class="fa fa-linkedin"></a> &nbsp;
-        <a href="#" class="fa fa-youtube"></a> &nbsp;
-        <a href="#" class="fa fa-instagram"></a> &nbsp;
-      </div>
-    </section>
+ 
 
     <section id="contact">
       <div class="container">
