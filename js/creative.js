@@ -1,4 +1,4 @@
-(function($) {
+/* (function($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
@@ -87,6 +87,7 @@
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
-  });
+  }); 
 
 })(jQuery); // End of use strict
+ */
